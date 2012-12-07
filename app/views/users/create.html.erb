@@ -1,0 +1,53 @@
+
+<!doctype html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Astloch|League+Script|Fascinate|Alfa+Slab+One|Orienta|Bubblegum+Sans|ABeeZee|Codystar|Eater|Butterfly+Kids|Fredericka+the+Great|Give+You+Glory|Cabin+Sketch|Caesar+Dressing|Londrina+Sketch|Molle:400italic|Butcherman|Alex+Brush|Finger+Paint|Frijole|Metal+Mania|Monofett|Aladin|Monoton|Arbutus|Carrois+Gothic+SC|Abril+Fatface|Aclonica|Advent+Pro|Akronim|Aldrich|Allerta+Stencil|Amatic+SC|Annie+Use+Your+Telescope|Arizonia|Bangers|Bonbon|Cedarville+Cursive|Chango|Covered+By+Your+Grace|Creepster|Ewert|Gruppo|Iceland|Jacques+Francois+Shadow|Kenia|Kranky|Lancelot|Londrina+Shadow|Love+Ya+Like+A+Sister|Miltonian' rel='stylesheet' type='text/css'>
+<title>Backstretch</title>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.backstretch.js"></script>
+<link href="css/IvanStyle.css" rel="stylesheet">
+ 
+
+</head>
+
+<body>
+  <header>
+    <h1>The hottest new app!</h1>
+    <p>Join our newsletter to learn more!</p>
+    <div id="contact-form">
+        
+
+        <%= form_for(User.new) do |f| %>
+          <%= f.label "Name:" %> <%= f.text_field :name %>
+          <%= f.label "Email:" %> <%= f.text_field :email %>
+          </br><%= f.submit %>
+
+
+        <% end %>
+
+        <!-- <form action="#" method="post" id="learn-more" >
+          
+            <input type="email" id="email" placeholder="Enter your email address" />
+            <input class="push_button blue" type="submit" value="Submit Email" />
+            
+          
+        </form> -->
+                
+    </div>
+  </header>
+
+
+  <script>
+  
+        $.backstretch([
+          "images/image1.jpg",
+          "images/image2.jpg"
+          
+        ], {
+            fade: 750,
+            duration: 4000
+        });
+  </script>
+</body>
+
+</html>

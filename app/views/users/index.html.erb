@@ -1,15 +1,9 @@
-<h1>Manage the Users</h1>
+<h1>Display everyone that signed up</h1>
 
 
 <!-- This section of the code below is the simple input boxes for the page -->
-<h3>Add New User</h3>
-<%= form_for(User.new) do |f| %>
-  <%= f.label "Name:" %> <%= f.text_field :name %>
-  <%= f.label "Email:" %> <%= f.text_field :email %>
-  </br><%= f.submit %>
 
 
-<% end %>
 
 <!-- With a Table for the display -->
   <table border="1" cellpadding = "5">
@@ -37,5 +31,3 @@
 
   </table>
 
-
-  <a href="/"> Back to the Front Page </a><br>
